@@ -1,0 +1,31 @@
+DABANK – Lab01
+
+Aufgabe 1)
+
+a) INSERT INTO student VALUES ('1', 'Ahmadi', 'Fida', '2017-01-01', '2');
+
+b) INSERT INTO modul (kurzzeichen, dozent1) VALUES ('Mimimi', 6);
+
+c) INSERT INTO dozent VALUES (DEFAULT, DEFAULT, 'Wer');
+
+d) INSERT INTO leistung (nr, modul, form, student, datum, versuch, dozent, note, semester) VALUES (DEFAULT, 'Mimimi', 'Klausur', 1, '2018-03-07', DEFAULT, 12, '1.0', 'W17');
+
+Aufgabe 2)
+
+a)  update modul set langname='Ein Dozent_Modul', semester=1 where kurzzeichen='Mimimi';
+
+b)  update leistung set datum=datum+3 where nr=114;
+
+c)  update modul set dozent2=(select nr from dozent where nr=12) and modul.kurzzeichen'Mimimi';
+
+d) update leistung set dozent=null where dozent=12 and modul='Mimimi' and student=1;
+
+Aufgabe 3)
+
+a) XXX
+
+b) XXX
+
+c) XXX
+
+d) XXX
